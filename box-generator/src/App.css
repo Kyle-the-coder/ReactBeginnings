@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.contain{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxy{
+  width: 100px;
+  height: 100px;
+
+}
