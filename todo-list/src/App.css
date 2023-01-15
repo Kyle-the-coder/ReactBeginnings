@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.content{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 80%;
+}
+
+.title{
+  background-color: rgba(0, 0, 0, 0.749);
+  border: 3px solid black;
+  border-bottom-right-radius: 2rem ;
+  width: 250px;
+  padding: 6px;
+  transition: all 0.7s;
+  color:aliceblue;
+}
+
+
+.title:hover{
+  background-color: rgb(130, 221, 224);
+  border-radius: 2rem;
+  color: black;
+}
+
+.button{
+  background-color: rgba(0, 0, 0, 0.749);
+  padding: 6px;
+  border-bottom-right-radius: 2rem;
+  width: 150px;
+  border: 3px solid black;
+  text-align: left;
+  transition: all 0.7s;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.button:hover{
+  background-color: rgb(130, 221, 224);
+  border-radius: 2rem;
+  color: black;
+
+}
+
+.list{
+  width: 100%;
+  border: 3px solid black;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  
+}
+  
+  
+
+.lTitle{
+  
+  background-color: aliceblue;
+  margin-top: 30px;
+  border: 3px solid black;
+  border-bottom-right-radius: 2rem ;
+  width: 250px;
+  padding: 6px;
+  transition: all 0.7s;
+  color:black;
+}
+
+.lTitle:hover{
+  background-color: rgba(224, 16, 16, 0.902);
+  border-radius: 2rem;
+  color: aliceblue;
+}
+
+.tList{
+  margin-right: 10px;
+}
+
+.dButton{
+  background-color: rgba(0, 0, 0, 0.749);
+  padding: 3px;
+  border-bottom-right-radius: 2rem;
+  width: 85px;
+  height: 40px;
+  border: 3px solid black;
+  text-align:justify;
+  transition: all 0.7s;
+  cursor: pointer;
+  color: aliceblue;
+  float: right;
+}
+
+
+
+.dButton:hover{
+  background-color: rgba(224, 16, 16, 0.902);
+  border-radius: 2rem;
+  color: black;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
