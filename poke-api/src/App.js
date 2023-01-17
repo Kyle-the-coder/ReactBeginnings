@@ -1,22 +1,17 @@
 
 import './App.css';
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 function App() {
 
-const [pokeList, setPokeList] = useState([])
+const [pokeList, setPokeList] = useState([]);
 
 
-const findPoke = () => {
-  fetch("http://pokeapi.co/api/v2/pokemon/?limit=811")
-  .then((response) => response.json())
-  .then((response) => {
-    console.log(response);
-    setPokeList(response.results)
-    console.log(pokeList)
-  })
+const findPoke = async() => {
+  const pokeResponse = await axios.get("http://pokeapi.co/api/v2/pokemon/?limit=811");
+  setPokeList(pokeResponse.data.results);
+  console.log(pokeResponse.data.results);
 }
-    
 
   return (
     <div className="App">
@@ -33,7 +28,15 @@ const findPoke = () => {
       </div>
       
     </div>
-  );
+);
 }
+
+
+  
+  
+  
+  
+    
+
 
 export default App;
