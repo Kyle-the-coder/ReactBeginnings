@@ -8,7 +8,7 @@ const [pokeList, setPokeList] = useState([])
 
 
 const findPoke = () => {
-  fetch("https://pokeapi.co/api/v2/pokemon")
+  fetch("http://pokeapi.co/api/v2/pokemon/?limit=811")
   .then((response) => response.json())
   .then((response) => {
     console.log(response);
