@@ -1,0 +1,34 @@
+function tossCoin() {
+    return Math.random() > 0.5 ? "heads" : "tails";
+}
+
+function fiveHeads() {
+        return new Promise( (resolve, reject) => {
+            let count = 0;
+            while(count < 5){
+                let result = tossCoin();
+                console.log("real result " + result)
+                if(result == "heads"){
+                    count++;
+                    console.log("count is " + count)
+                    if(count == 5){
+                        //resolve if count == 5
+                        resolve("Heads has been flipped five times")
+                    } else if(count > 100){
+                        count = 0;
+                        //reject if count goes over 100
+                        reject("other string")
+                    }
+    
+                } 
+
+            }
+            
+        });
+    }
+    fiveHeads()
+        .then( res => console.log(res) )
+        .catch( err => console.log(err) );
+    console.log( "When does this run now?" );
+    
+    
