@@ -17,14 +17,11 @@ module.exports.findOne = (req, res) =>{
 }
 //Find One Random
 module.exports.findOneRandom = (req, res) =>{
-    let jokeArr = Joke.find()
-    let randomJoke = jokeArr[Math.floor(Math.random()*jokeArr.length)]
-    console.log(jokeArr)
-    console.log(randomJoke)
-        // .then(results=>{
-        //     res.json({result: results})
-        // })
-        // .catch(err=> res.json({message: "not random"}, err))
+    Joke.aggregate().sample(1)
+        .then(results=>{
+            res.json({joke: results})
+        })
+        .catch(err=> res.json({message: "not random"}, err))
 }
 //Create One
 module.exports.createJoke = (req, res) =>{
