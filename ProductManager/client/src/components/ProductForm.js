@@ -17,8 +17,6 @@ export default props => {
                 console.log("res: " + res)
             })
             .catch(err=> console.log("err: " + err))
-        
-
     }
 
     return(
