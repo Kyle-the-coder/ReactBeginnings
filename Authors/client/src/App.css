@@ -1,0 +1,26 @@
+*{
+  background-color: rgb(12, 12, 12);
+}
+.App {
+  text-align: center;
+}
+
+.authorTable{
+  width: 60%;
+  margin: auto;
+}
+.formBox{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.action{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  width: 100px;
+  
+}
