@@ -1,0 +1,67 @@
+
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aliceblue;
+  border-bottom: 3px solid black;
+}
+
+.mainContent{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 1rem;
+  border: 3px solid black;
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.formBox{
+  width: 80%;
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 1rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.textBox{
+  display: flex;
+  align-items: flex-start;
+}
+
+.buttonBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.detailsBox{
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid black;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
