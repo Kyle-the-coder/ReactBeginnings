@@ -1,0 +1,130 @@
+/* Background Content */
+
+.backgroundMain {
+  background-color: rgb(101, 101, 101);
+}
+
+.background {
+  width: 100%;
+  height: 4500px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(42, 42, 42, 1) 100%), url("https://wallpapers.com/images/file/geometric-shapes-y7jarf9l49escwd7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Navbar Content */
+.nav {
+  background-color: rgb(42, 42, 42);
+  width: 100%;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinks {
+  width: 400px;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.typeBox {
+  width: 1200px;
+  margin-left: 30px;
+  color: rgb(108, 207, 174);
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  background-size: cover;
+  background-position: top;
+}
+
+.title {
+  position: fixed;
+}
+
+/* About Me Section */
+
+.aboutMeSection {
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(59, 104, 89);
+  color: aliceblue;
+  padding: 20px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  opacity: 0.2;
+  transition: all 0.8s;
+  display: flex;
+}
+
+.aboutMeSection:hover {
+  opacity: 1;
+}
+
+.aboutMeContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectSection {
+  width: 100%;
+  background-color: rgb(241, 234, 180);
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  opacity: .1;
+  transition: all 0.9s;
+}
+
+.projectSection:hover{
+  opacity: 1;
+}
+
+
+
+.projectSpacing {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContent {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(101, 101, 101);
+  color: aliceblue;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 20px;
+  border: 3px solid black;
+  transition: all 0.7s;
+}
+
+.projectContent:hover {
+  width: 80%;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  color: black;
+}
+
+.projectVideo {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.projectSquares {
+  display: flex;
+  justify-content: space-around;
+}
