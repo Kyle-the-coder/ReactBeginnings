@@ -1,13 +1,15 @@
 import { CarouselItem } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
+import "../styles/displayProjects.css"
+import bg1Img from "../assets/background6.webp"
 
 const DisplayProjects = () => {
     return (
 
-        <section className="projectSection">
+        <section className="projectSection"  style={{ backgroundImage: `url(${bg1Img})` }}>
             <div className="projectSpacing">
-                <h1>Projects:</h1>
+                <h3>Projects:</h3>
                 <div className='projectSquares'>
                     <div className="projectContent">
                         <h4><strong>Next Dimension Game Info</strong></h4>
@@ -28,7 +30,7 @@ const DisplayProjects = () => {
 
                     </div>
 
-                    <div className="projectContent">
+                    <div className="projectContent1">
                         <h4><strong>Tourney Journey</strong></h4>
                         <Carousel slide={false}>
                             <CarouselItem>
@@ -49,9 +51,9 @@ const DisplayProjects = () => {
 
                     <div className="projectContent">
                         <h4><strong>Battle Events Inc.</strong></h4>
-                        <Carousel slide={false}>
+                        <Carousel slide={false} >
                             <CarouselItem>
-                                <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/210454002-b236875d-a756-4c69-8ad0-c248c4d6c64e.mov"></video>
+                                <video loop muted autoPlay controls='' className="projectVideo " src="https://user-images.githubusercontent.com/111798115/210454002-b236875d-a756-4c69-8ad0-c248c4d6c64e.mov"></video>
                             </CarouselItem>
                             <CarouselItem>
                                 <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/210454513-abbb5f6e-00fd-4a9f-8958-408db4df8293.mov"></video>

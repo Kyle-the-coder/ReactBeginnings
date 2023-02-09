@@ -13,14 +13,14 @@ return (
 
 	typewriter
 		
-	.typeString("May I introduce myself?")
+	.typeString("Welcome!")
 		
 	.pauseFor(1000)
 	.deleteAll()
-	.typeString("I'm")
+	
     .pauseFor(800)
     .deleteAll()
-    .typeString("Kyle The Coder")
+    .typeString("I'm Kyle The Coder")
 	.start();
 	}}
 	/>
