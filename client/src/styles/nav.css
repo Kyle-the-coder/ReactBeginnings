@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
+.nav {
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.typeW {
+    display: flex;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    align-items: top;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+    padding: 10px;
+
+}
+
+.bgImg {
+    width: 40vw;
+}
+
+.shapeImg {
+    width: 50vw;
+    transition: all 0.7s;
+}
+
+.navLinks {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    justify-content: space-evenly;
+}
+
+.typeBox {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+}
+
+.navContent1 {
+    width: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.8s;
+    cursor: pointer;
+    color: white;
+    font-family: 'Unbounded', cursive;
+}
+
+.navContent1:hover {
+    border-radius: 1rem;
+    background-color: rgb(138, 224, 239);
+    color: black;
+}
+
+.navContent2 {
+    width: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.8s;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+.navContent2:hover {
+    border-radius: 1rem;
+    background-color: rgb(247, 85, 70);
+    color: black;
+}
+
+.navContent3 {
+    width: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.8s;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Unbounded', cursive;
+    color: white;
+}
+
+.navContent3:hover {
+    border-radius: 1rem;
+    background-color: rgb(102, 244, 77);
+    color: black;
+}
+
+.title {
+    position: fixed;
+}
+
+@media (max-width: 730px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .shapeImg {
+        width: 90vw;
+        
+    }
+
+    .navLinks {
+        width: 100vw;
+        height: 90vh;
+        align-items: center;
+    }
+    .bgImg{
+        width: 100%;
+    
+    }
+
+
+    .typeW {
+        width: 70vw;
+    }
+
+    
+}
+
+@media (max-width: 550px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .shapeImg {
+        width: 90vw;
+        
+    }
+
+    .navLinks {
+        width: 100vw;
+        height: 50vh;
+        align-items: center;
+    }
+    .bgImg{
+        width: 100%;
+
+    }
+
+
+    .typeW {
+        width: 70vw;
+    }
+
+    
+}
+
+@media (max-width: 450px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .shapeImg {
+        width: 96vw;
+        
+    }
+
+    .navLinks {
+        width: 100vw;
+        height: 40vh;
+        align-items: center;
+    }
+    .bgImg{
+        width: 100%;
+    }
+
+
+    .typeW {
+        width: 70vw;
+        
+    }
+    .typeBox{
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .navContent1{
+        font-size: .7rem;
+    }
+    .navContent2{
+        font-size: .7rem;
+    }
+    .navContent3{
+        font-size: .7rem;
+    }
+
+    
+}
+
+
+@media (max-width: 375px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .shapeImg {
+        width: 96vw;
+        
+    }
+
+    .navLinks {
+        width: 100vw;
+        height: 40vh;
+        align-items: center;
+    }
+    .bgImg{
+        width: 100%;
+        box-shadow: 3px 3px 5px black;
+    }
+
+
+    .typeW {
+        width: 95vw;
+        display: flex;
+
+    
+    }
+    .typeBox{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .navContent1{
+        font-size: .8rem;
+    }
+    .navContent2{
+        font-size: .8rem;
+    }
+    .navContent3{
+        font-size: .8rem;
+    }
+    
+}
+
+@media (max-width: 290px) {
+    .nav {
+        flex-direction: column-reverse;
+    }
+
+    .shapeImg {
+        width: 96vw;
+        
+    }
+
+    .navLinks {
+        width: 120vw;
+        height: 40vh;
+        align-items: center;
+        background-size: 100%;
+    }
+    .bgImg{
+        width: 100%;
+
+    }
+
+
+    .typeW {
+        width: 90vw;
+        font-size: .8rem;
+    }
+
+    .typeBox{
+        font-size: .8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navContent1{
+        font-size: .6rem;
+        width: 50vw;
+    }
+    .navContent2{
+        font-size: .6rem;
+        width: 50vw;
+    }
+    .navContent3{
+        font-size: .6rem;
+        width: 50vw;
+    }
+
+    
+}
+
+

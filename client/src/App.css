@@ -1,0 +1,13 @@
+/* Background Content */
+
+.background {
+  width: 100%;
+  height: 4500px;
+  background-color: rgb(229, 229, 229);
+  background-image: url('https://img.freepik.com/free-vector/3d-rendered-geometrical-shapes-black-elements-minimalist-vector-set_53876-157791.jpg?w=2000');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
