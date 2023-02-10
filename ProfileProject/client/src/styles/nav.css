@@ -3,7 +3,6 @@
 .nav {
     background-position: center;
     background-size: cover;
-    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,28 +23,27 @@
 
 }
 
-.bgImg {
-    width: 40vw;
-}
 
 .shapeImg {
-    width: 50vw;
+    width: 42vw;
     transition: all 0.7s;
 }
 
 .navLinks {
-    width: 40vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-right: 5vw;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    margin-left: 5vw;
 }
+
 
 .typeBox {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     font-family: 'Unbounded', cursive;
@@ -114,9 +112,9 @@
     position: fixed;
 }
 
-@media (max-width: 730px) {
-    .nav {
-        flex-direction: column-reverse;
+@media all and (max-width: 730px) {
+    .nav{
+        flex-direction: column;
     }
 
     .shapeImg {
@@ -131,6 +129,8 @@
     }
     .bgImg{
         width: 100%;
+        display: flex;
+        justify-content: end;
     
     }
 
@@ -142,9 +142,10 @@
     
 }
 
-@media (max-width: 550px) {
+
+@media all and (max-width: 555px) {
     .nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .shapeImg {
@@ -159,6 +160,8 @@
     }
     .bgImg{
         width: 100%;
+        display: flex;
+        justify-content: end;
 
     }
 
@@ -170,9 +173,9 @@
     
 }
 
-@media (max-width: 450px) {
+@media all and (max-width: 450px) {
     .nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .shapeImg {
@@ -187,6 +190,8 @@
     }
     .bgImg{
         width: 100%;
+        display: flex;
+        justify-content: end;
     }
 
 
@@ -213,9 +218,9 @@
 }
 
 
-@media (max-width: 375px) {
+@media all and (max-width: 375px) {
     .nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .shapeImg {
@@ -230,7 +235,8 @@
     }
     .bgImg{
         width: 100%;
-        box-shadow: 3px 3px 5px black;
+        display: flex;
+        justify-content: end;
     }
 
 
@@ -257,9 +263,9 @@
     
 }
 
-@media (max-width: 290px) {
+@media all and (max-width: 290px) {
     .nav {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .shapeImg {
@@ -270,11 +276,14 @@
     .navLinks {
         width: 120vw;
         height: 40vh;
-        align-items: center;
+        display: flex;
         background-size: 100%;
+        align-items: center;
     }
     .bgImg{
         width: 100%;
+        display: flex;
+        justify-content: end;
 
     }
 
@@ -282,6 +291,7 @@
     .typeW {
         width: 90vw;
         font-size: .8rem;
+        margin-right: 25vw;
     }
 
     .typeBox{
@@ -293,17 +303,18 @@
     .navContent1{
         font-size: .6rem;
         width: 50vw;
+        margin-right: 25vw;
     }
     .navContent2{
         font-size: .6rem;
         width: 50vw;
+        margin-right: 25vw;
     }
     .navContent3{
         font-size: .6rem;
         width: 50vw;
+        margin-right: 25vw;
     }
 
     
 }
-
-

@@ -33,7 +33,7 @@ const DisplayProjects = (props) => {
 
         <section className="projectSection" id="projectSect" style={{ backgroundImage: `url(${bg1Img})` }} >
             <div className="projectSpacing">
-                <h3 className='projectsTitle' >Projects:</h3>
+                <h3 className='projectsTitle mx-2' >Projects:</h3>
                 <div className='projectSquares'>
 
 
@@ -65,7 +65,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Front-end written in React, JavaScript, CSS</p>
-                            <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo" className='projectLinks'>GitHub Link</Link>
                         </div>
                         :
                         <div className="projectContentNoAnime1" >
@@ -82,7 +82,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Front-end written in React, JavaScript, CSS</p>
-                            <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
 
@@ -115,7 +115,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Full Stack written in Java with SpringBoot and the dataBase is MySql</p>
-                            <Link to="https://github.com/Kyle-the-coder/TourneyJourney">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/TourneyJourney" className='projectLinks'>GitHub Link</Link>
                         </div> :
                         <div className="projectContent2">
 
@@ -131,7 +131,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Full Stack written in Java with SpringBoot and the dataBase is MySql</p>
-                            <Link to="https://github.com/Kyle-the-coder/TourneyJourney">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/TourneyJourney" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
 
@@ -153,7 +153,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Full Stack written in Python with Flask and the dataBase is MySql</p>
-                            <Link to="https://github.com/Kyle-the-coder/BattleEventInc">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/BattleEventInc" className='projectLinks'>GitHub Link</Link>
                         </div>
 
 
@@ -171,7 +171,7 @@ const DisplayProjects = (props) => {
                                 </CarouselItem>
                             </Carousel>
                             <p>Full Stack written in Python with Flask and the dataBase is MySql</p>
-                            <Link to="https://github.com/Kyle-the-coder/BattleEventInc">GitHub Link</Link>
+                            <Link to="https://github.com/Kyle-the-coder/BattleEventInc" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
 

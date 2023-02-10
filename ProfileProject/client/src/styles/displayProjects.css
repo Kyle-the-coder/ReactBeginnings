@@ -30,36 +30,42 @@
     width: 100%;
 }
 
+.projectLinks{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(247, 85, 70);
+    padding: 5px;
+    border-radius: 1rem;
+}
+
 .projectContent1 {
     display: flex;
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     padding: 5px;
     transition: all 0.7s;
     animation: pcAnimation 1.8s ease;
     margin-bottom: 20vh;
-}
-.projectContent1:hover {
-    border-radius: 1rem;
-    border: 3px solid rgb(247, 85, 70);
 }
 .projectContentNoAnime1{
     display: flex;
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     padding: 5px;
     transition: all 0.7s;
     margin-bottom: 20vh;
 }
-.projectContentNoAnime1:hover {
+.projectContent1:hover {
+    background-color: rgb(247, 85, 70);
     border-radius: 1rem;
-    border: 3px solid rgb(247, 85, 70);
+    color: black;
+}
+.projectContentNoAnime1:hover {
+    background-color: rgb(247, 85, 70);
+    border-radius: 1rem;
+    color: black;
 }
 
 
@@ -70,8 +76,6 @@
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     padding: 5px;
     transition: all 0.7s;
     animation: pcAnimation 1.8s ease;
@@ -82,20 +86,20 @@
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     margin-bottom: 10vh;
     padding: 5px;
     transition: all 0.7s;
     margin-bottom: 20vh;
 }
 .projectContent2:hover {
+    background-color: rgb(247, 85, 70);
     border-radius: 1rem;
-    border: 3px solid rgb(247, 85, 70);
+    color: black;
 }
 .projectContentNoAnime2:hover {
+    background-color: rgb(247, 85, 70);
     border-radius: 1rem;
-    border: 3px solid rgb(247, 85, 70);
+    color: black;
 }
 
 
@@ -104,35 +108,29 @@
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     padding: 5px;
     transition: all 0.7s;
     animation: pcAnimation 1.8s ease;
     margin-bottom: 20vh;
-}
-.projectContent3:hover {
-    border: 3px solid rgb(247, 85, 70);
 }
 .projectContentNoAnime3{
     display: flex;
     flex-direction: column;
     color: aliceblue;
     align-items: center;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     padding: 5px;
     transition: all 0.7s;
     margin-bottom: 20vh;
 }
-.projectContentNoAnime3:hover {
-    border: 3px solid rgb(247, 85, 70);
+.projectContent3:hover {
+    background-color: rgb(247, 85, 70);
+    border-radius: 1rem;
+    color: black;
 }
-
-
-
-
-
+.projectContentNoAnime3:hover {
+    background-color: rgb(247, 85, 70);
+    color: black;
+}
 
 .projectVideo {
     width: 80vw;
@@ -143,7 +141,9 @@
     height: auto;
 }
 
+
 .projectSquares {
+    margin-top: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -180,70 +180,40 @@
 }
 
 @media (max-width: 550px) {
-    .nav {
-        flex-direction: column-reverse;
-    }
-
-    .shapeImg {
-        width: 90vw;
-        
-    }
-
-    .navLinks {
-        width: 100vw;
-        height: 50vh;
+    .projectSquares{
+        flex-direction: column;
         align-items: center;
     }
-    .bgImg{
-        width: 100%;
-
+    .projectContent{
+        width: 90%;
     }
-
-
-    .typeW {
-        width: 70vw;
+    .projectContent1{
+        width: 90%;
+    
+    }
+    .projectVideo{
+        width: 100%;
+        
     }
 
     
 }
 
 @media (max-width: 450px) {
-    .nav {
-        flex-direction: column-reverse;
-    }
-
-    .shapeImg {
-        width: 96vw;
-        
-    }
-
-    .navLinks {
-        width: 100vw;
-        height: 40vh;
+    .projectSquares{
+        flex-direction: column;
         align-items: center;
     }
-    .bgImg{
+    .projectContent{
+        width: 90%;
+    }
+    .projectContent1{
+        width: 90%;
+    
+    }
+    .projectVideo{
         width: 100%;
-    }
-
-
-    .typeW {
-        width: 70vw;
         
-    }
-    .typeBox{
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-    }
-    .navContent1{
-        font-size: .7rem;
-    }
-    .navContent2{
-        font-size: .7rem;
-    }
-    .navContent3{
-        font-size: .7rem;
     }
 
     
@@ -251,93 +221,39 @@
 
 
 @media (max-width: 375px) {
-    .nav {
-        flex-direction: column-reverse;
-    }
-
-    .shapeImg {
-        width: 96vw;
-        
-    }
-
-    .navLinks {
-        width: 100vw;
-        height: 40vh;
+    .projectSquares{
+        flex-direction: column;
         align-items: center;
     }
-    .bgImg{
-        width: 100%;
-        box-shadow: 3px 3px 5px black;
+    .projectContent{
+        width: 90%;
     }
-
-
-    .typeW {
-        width: 95vw;
-        display: flex;
-
+    .projectContent1{
+        width: 90%;
     
     }
-    .typeBox{
-        font-size: 1.1rem;
-        display: flex;
-        justify-content: center;
-    }
-    .navContent1{
-        font-size: .8rem;
-    }
-    .navContent2{
-        font-size: .8rem;
-    }
-    .navContent3{
-        font-size: .8rem;
+    .projectVideo{
+        width: 100%;
+        
     }
     
 }
 
 @media (max-width: 290px) {
-    .nav {
-        flex-direction: column-reverse;
-    }
-
-    .shapeImg {
-        width: 96vw;
-        
-    }
-
-    .navLinks {
-        width: 120vw;
-        height: 40vh;
+    .projectSquares{
+        flex-direction: column;
         align-items: center;
-        background-size: 100%;
     }
-    .bgImg{
+    .projectContent{
+        width: 90%;
+    }
+    .projectContent1{
+        width: 90%;
+    
+    }
+    .projectVideo{
         width: 100%;
-
-    }
-
-
-    .typeW {
-        width: 90vw;
-        font-size: .8rem;
-    }
-
-    .typeBox{
-        font-size: .8rem;
-        display: flex;
-        justify-content: center;
-    }
-
-    .navContent1{
-        font-size: .6rem;
-        width: 50vw;
-    }
-    .navContent2{
-        font-size: .6rem;
-        width: 50vw;
-    }
-    .navContent3{
-        font-size: .6rem;
-        width: 50vw;
+        
     }
 
     

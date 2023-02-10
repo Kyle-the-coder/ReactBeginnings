@@ -15,8 +15,15 @@
 }
 
 .contactMeIcons{
-    width: 5vw;
+    width: 7vw;
     cursor: pointer;
+    padding: 8px;
+    transition: all .7s;
+    
+}
+.contactMeIcons:hover{
+    background-color: rgb(102, 244, 77);
+    border-radius: 1rem;
 }
 
 .contactTitle{

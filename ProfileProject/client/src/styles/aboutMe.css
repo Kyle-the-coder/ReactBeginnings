@@ -3,7 +3,7 @@
 .aboutMeSection {
     width: 100vw;
     margin-top: 10vh;
-    height: 50vh;
+    height: 70vh;
     padding: 20px;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -44,11 +44,16 @@
     border-bottom-right-radius: 2rem;
     transition: all 0.7s;
     color: white;
-    
+}
+
+.photoBox{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutMeContent:hover {
-    border: 3px solid rgb(138, 224, 239);
+    background-color: rgb(138, 224, 239);
     border-radius: 1rem;
 }
 
@@ -57,8 +62,14 @@
 }
 
 .aboutMeImg {
-    width: 38vw;
+    width: 80vh;
 }
+
+.aboutMeImg2 {
+    width: 100%;
+    margin-top: 13vh;
+}
+
 
 @media (max-width: 730px) {
     .aboutMeSection {
@@ -73,14 +84,12 @@
 
     .aboutMeBox {
         width: 100%;
-
     }
 
     .aboutMeImg {
         width: 70vw;
+        margin-top: 0;
     }
-
-
 }
 
 @media (max-width: 550px) {
@@ -140,3 +149,4 @@
 
 
 }
+
