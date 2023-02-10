@@ -1,0 +1,34 @@
+/* Contact Me Section */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
+.contactMeSection{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.contactMeIcons{
+    width: 5vw;
+    cursor: pointer;
+}
+
+.contactTitle{
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Unbounded', cursive;
+}
+
+.contactContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

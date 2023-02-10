@@ -1,5 +1,5 @@
 /* About Me Section */
-
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 .aboutMeSection {
     width: 100vw;
     margin-top: 10vh;
@@ -29,6 +29,10 @@
     transition: all 0.7s;
 }
 
+.aboutMeTitle{
+    font-family: 'Unbounded', cursive;
+}
+
 .aboutMeBox {
     display: flex;
     width: 50%;
@@ -40,6 +44,7 @@
     border-bottom-right-radius: 2rem;
     transition: all 0.7s;
     color: white;
+    
 }
 
 .aboutMeContent:hover {

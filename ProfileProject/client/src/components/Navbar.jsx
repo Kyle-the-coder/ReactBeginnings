@@ -1,24 +1,27 @@
 import TypeWriter from "../views/Intro";
 import '../styles/nav.css';
 import bg1Img from "../assets/background6.webp"
+import {useInView} from 'react-intersection-observer';
+
 
 
 
 const NavbarStyle = () => {
+    const { ref: typeRef, inView: typeIsVisi } = useInView();
     return (
         <div className="nav" style={{ backgroundImage: `url(${bg1Img})` }}>
             <div className="bgImg" >
                 <img width="400" className="shapeImg" src={require('../assets/background4.png')}></img>
             </div>
             <div className="navLinks" >
-                <div className="typeW">
+                <div className="typeW" ref={typeRef}>
 
-                    <TypeWriter />
+                    {typeIsVisi ?<TypeWriter /> : ""}
 
                 </div>
-                <p className="navContent1">About Me</p>
-                <p className="navContent2">Projects</p>
-                <p className="navContent3">Contact Me</p>
+                <a href="#aboutSection" className="navContent1 text-decoration-none">About Me</a>
+                <a href="#projectSect" className="navContent2 text-decoration-none">Projects</a>
+                <a href="#contactSection" className="navContent3 text-decoration-none">Contact Me</a>
             </div>
         </div>
 

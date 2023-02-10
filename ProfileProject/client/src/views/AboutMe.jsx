@@ -3,10 +3,10 @@ import '../styles/aboutMe.css'
 
 const AboutMe = () => {
     return (
-        <section className="aboutMeSection" style={{ backgroundImage: `url(${bg1Img})` }}>
+        <section className="aboutMeSection" id="aboutSection" style={{ backgroundImage: `url(${bg1Img})` }}>
             <div className="aboutMeBox">
 
-                <h4 className="mx-2">About Me:</h4>
+                <h4 className="mx-2 aboutMeTitle">About Me:</h4>
             <div className="aboutMeContent">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus. Elit ut aliquam purus sit amet luctus venenatis.
