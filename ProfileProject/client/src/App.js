@@ -3,11 +3,10 @@ import './App.css';
 import NavbarStyle from './components/Navbar';
 import AboutMe from './views/AboutMe';
 import DisplayProjects from './views/DisplayProjects';
-import { Routes, Route } from 'react-router-dom'
 import ContactMe from './views/ContactMe';
-import EmailModal from './components/EmailModal';
-import { InView } from "react-intersection-observer";
 import { useState } from 'react';
+import LandingPage from './views/LandingPage';
+import SkillsList from './views/SkillsList';
 
 
 function App() {
@@ -25,17 +24,12 @@ function App() {
     <div className='backgroundMain'>
       <div className='background'>
 
-        <InView onChange={changeView}>
-          {({ ref }) => (
+        <NavbarStyle />
 
-            <div ref={ref}>
-              <NavbarStyle />
-            </div>
-          )}
-        </InView>
-
+        <LandingPage />
 
         <AboutMe />
+        <SkillsList changeView={changeView}/>
         <DisplayProjects totalView={totalView} />
         <ContactMe />
       </div>

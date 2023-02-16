@@ -3,15 +3,17 @@
 
 .contactMeSection{
     width: 100%;
+    background-color: rgb(37, 37, 37);
     height: 40vh;
     display: flex;
+    border-top: 3px solid black;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
     background-position: center;
     background-size: cover;
     flex-direction: column;
-    margin-top: 30vh;
+    margin-top: 10vh;
 }
 
 .contactMeIcons{
@@ -22,7 +24,7 @@
     
 }
 .contactMeIcons:hover{
-    background-color: rgb(102, 244, 77);
+    background-color: #eed5ae;
     border-radius: 1rem;
 }
 
@@ -39,3 +41,50 @@
     display: flex;
     justify-content: space-evenly;
 }
+@media (max-width: 730px) {
+    .contactMeSection{
+        height: 20vh;
+    }
+}
+
+@media (max-width: 610px) {
+    .contactMeIcons{
+        width: 9vw;
+        
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .contactMeIcons{
+        width: 11vw;
+        
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .contactMeIcons{
+        width: 12vw;
+        
+    }
+    .cm{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 275px) {
+    .contactMeIcons{
+        width: 15vw;
+        
+    }
+    .cm{
+        font-size: 1rem;
+    }
+
+}
+

@@ -1,6 +1,7 @@
 /* About Me Section */
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 .aboutMeSection {
+    background-color: rgb(37, 37, 37);
     width: 100vw;
     margin-top: 10vh;
     height: 70vh;
@@ -23,10 +24,13 @@
     background-color: rgb(238, 238, 238);
     overflow: auto;
     padding: 15px;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-radius: 1rem;
     border: 3px solid black;
     transition: all 0.7s;
+}
+.aboutMeContent:hover {
+    border: 3px solid #b3001b;
+    border-radius: 1rem;
 }
 
 .aboutMeTitle{
@@ -46,36 +50,32 @@
     color: white;
 }
 
-.photoBox{
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-}
 
-.aboutMeContent:hover {
-    background-color: rgb(138, 224, 239);
-    border-radius: 1rem;
-}
 
 .aboutMeContent::-webkit-scrollbar {
     display: none;
 }
 
-.aboutMeImg {
-    width: 80vh;
+.aboutMeImgContainer{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.aboutMeImg2 {
+.aboutMeImg {
     width: 100%;
-    margin-top: 13vh;
-}
+    height: auto;
+    border-radius: 1rem;
+}   
+
 
 
 @media (max-width: 730px) {
     .aboutMeSection {
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        height: 140vh;
     }
 
     .aboutMeContent {
@@ -86,9 +86,9 @@
         width: 100%;
     }
 
-    .aboutMeImg {
-        width: 70vw;
-        margin-top: 0;
+    .aboutMeImgContainer{
+        width: 95%;
+        height: auto;
     }
 }
 
@@ -103,8 +103,9 @@
         width: 100%;
     }
 
-    .aboutMeImg {
-        width: 80vw;
+    .aboutMeImgContainer {
+        width: 95%;
+        height: auto;
     }
 
 
@@ -122,10 +123,10 @@
 
     }
 
-    .aboutMeImg {
-        width: 80vw;
+    .aboutMeImgContainer {
+        width: 95%;
+        height: auto;
     }
-
 
 }
 
@@ -139,12 +140,12 @@
 
     .aboutMeContent {
         width: 100%;
-        margin-bottom: 10vh;
         font-size: .6rem;
     }
 
-    .aboutMeImg {
-        width: 95vw;
+    .aboutMeImgContainer {
+        width: 95%;
+        height: auto;
     }
 
 

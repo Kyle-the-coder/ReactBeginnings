@@ -1,0 +1,328 @@
+/* Landing Page Content */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+
+.landingPageContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: rgb(37, 37, 37);
+    justify-content: space-evenly;
+    border-bottom: 3px solid black;
+    background-image: url("../assets/background.png");
+    background-position: center top 6vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.landingPageContainer>img{
+    justify-content: center;
+}
+
+.leftContent {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: top;
+    z-index: 1;
+}
+
+.typeBox {
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+}
+
+.lpQuote {
+    font-size: .7rem;
+}
+
+
+.lpIconsContainer{
+    display: flex;
+    width: 80%;
+    align-items: flex-end;
+    cursor: pointer;
+    justify-content: left;
+}
+.lpIcons{
+    width: 40px;
+    height: auto;
+}
+
+
+
+.landingPageText {
+    width: 80%;
+    margin-top: 10vh;
+    color: aliceblue;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Unbounded', cursive;
+    justify-content: space-around;
+}
+
+.textContent {
+    color: #b3001b;
+}
+
+.textContent2 {
+    color: #eed5ae;
+}
+
+.rightContent {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.funFactsTitle {
+    width: 30vw;
+    color: white;
+    font-family: 'Unbounded', cursive;
+}
+
+.colorLineContainer{
+    width: 40vw;
+}
+
+.funFactsContent {
+    font-size: .6rem;
+    width: 30vw;
+    height: 46vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: top;
+}
+
+@media (max-width: 875px){
+    .typeBox{
+        font-size: 1.5rem;
+    }
+
+    .lpTitleContainer{
+        font-size: 1rem;
+    }
+    .lpQuote{
+        font-size: .7rem;
+    }
+    .lpIcons{
+        width: 30px;
+        height: auto;
+    }
+    .lpIconsContainer{
+        font-size: .8rem;
+    }
+
+}
+
+
+@media (max-width: 735px){
+    .typeBox{
+        font-size: 1.4rem;
+    }
+
+    .lpTitleContainer{
+        font-size: .9rem;
+    }
+    .lpQuote{
+        font-size: .6rem;
+    }
+    .lpIcons{
+        width: 30px;
+        height: auto;
+    }
+    .lpIconsContainer{
+        font-size: .8rem;
+    }
+
+}
+@media (max-width: 675px){
+    .typeBox{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 600px){
+    .landingPageContainer{
+        flex-direction: column;
+        background-image: url("../assets/backgroundSplit.png");
+        background-position: right top 8vh;
+    }
+    
+    .leftContent{
+        width: 100%;
+        margin-left: 1vw;
+        margin-bottom: 4vh;
+    }
+
+    .landingPageText{
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .typeBox{
+        font-size: 1.8rem;
+    }
+
+    .lpIcons{
+        width: 30px;
+        height: auto;
+    }
+    .lpIconsContainer{
+        width: 50%;
+        font-size: .8rem;
+    
+    }
+
+    .lpTitleContainer{
+        font-size: 1.4rem;
+    }
+
+    .lpQuote{
+        font-size: .9rem;
+    }
+
+    .rightContent{
+        width: auto;
+        align-items: flex-start;
+        margin-left: 1vw;
+    }
+    
+
+    .funFactsTitle{
+        width: 100%;
+    }
+    .colorLineContainer{
+        width: 100%;
+    }
+    .funFactsContent{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .landingPageContainer{
+        flex-direction: column;
+        background-image: url("../assets/backgroundSplit.png");
+        background-position: right top 8vh;
+    }
+    
+    .leftContent{
+        width: 100%;
+    }
+
+    .landingPageText{
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .typeBox{
+        font-size: 1.3rem;
+    }
+
+    .lpIcons{
+        width: 30px;
+        height: auto;
+    }
+    .lpIconsContainer{
+        width: 50%;
+        justify-content: space-around;
+        font-size: .6rem;
+    }
+
+    .lpTitleContainer{
+        font-size: .9rem;
+    }
+
+    .lpQuote{
+        font-size: .56rem;
+    }
+
+    .rightContent{
+        width: auto;
+        align-items: flex-start;
+    }
+    
+
+    .funFactsTitle{
+        width: 100%;
+    }
+    .colorLineContainer{
+        width: 100%;
+    }
+    .funFactsContent{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .landingPageContainer{
+        flex-direction: column;
+        background-image: url("../assets/backgroundSplit.png");
+        background-position: right top 8vh;
+    }
+    
+    .leftContent{
+        width: 100%;
+    }
+
+    .landingPageText{
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .typeBox{
+        font-size: 1.3rem;
+    }
+
+    .lpIcons{
+        width: 30px;
+        height: auto;
+    }
+    .lpIconsContainer{
+        width: 50%;
+        justify-content: space-around;
+        font-size: .6rem;
+    }
+
+    .lpTitleContainer{
+        font-size: .9rem;
+    }
+
+    .lpQuote{
+        font-size: .56rem;
+    }
+
+    .rightContent{
+        width: auto;
+        align-items: flex-start;
+    }
+    
+
+    .funFactsTitle{
+        width: 100%;
+    }
+    .colorLineContainer{
+        width: 100%;
+    }
+    .funFactsContent{
+        width: 70%;
+    }
+}

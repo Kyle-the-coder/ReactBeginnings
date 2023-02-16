@@ -1,18 +1,16 @@
 import gthb from "../assets/github.png"
-import gml from "../assets/gmail.png"
 import insta from "../assets/instagram.png"
 import linkdIn from "../assets/linkedin.png"
-import bg1Img from "../assets/background6.webp"
 import "../styles/contactMe.css"
 import {Link} from "react-router-dom";
 import EmailModal from "../components/EmailModal"
 
 const ContactMe = () =>{
     return(
-        <section className="contactMeSection"  id="contactSection" style={{ backgroundImage: `url(${bg1Img})`}}>
+        <section className="contactMeSection"  id="contactSection">
         <div className="contactTitle">
 
-            <h3>Contact Me:</h3>
+            <h3 className="cm">Contact Me:</h3>
         </div>
         <div className="contactContent">
             

@@ -1,0 +1,98 @@
+.skillsSection{
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    background-color: rgb(37, 37, 37);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 20px;
+    color: white;
+}
+
+.skillsTitle {
+    font-family: 'Unbounded', cursive;
+}
+
+.skillsContent{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.skillsLogo{
+    border-radius: 1rem;
+}
+.skill1{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #b3001b;
+    border-radius: 1rem;
+    transition: all .7s;
+}
+.skill1:hover{
+    background-color: #b3001b;
+}
+.skill2{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #b3001b;
+    border-radius: 1rem;
+    transition: all .7s;
+}
+.skill2:hover{
+    background-color: #b3001b;
+}
+.skill3{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #b3001b;
+    border-radius: 1rem;
+    transition: all .7s;
+}
+.skill3:hover{
+    background-color: #b3001b;
+}
+.skill4{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #b3001b;
+    border-radius: 1rem;
+    transition: all .7s;
+}
+.skill4:hover{
+    background-color: #b3001b;
+}
+
+@media (max-width: 730px) {
+    .skillsContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill1{
+        width: fit-content;
+        margin-bottom: 3vh;
+    }
+    .skill2{
+        width: fit-content;
+        margin-bottom: 3vh;
+    }
+    .skill3{
+        width: fit-content;
+        margin-bottom: 3vh;
+    }
+    .skill4{
+        width: fit-content;
+        margin-bottom: 3vh;
+    }
+}

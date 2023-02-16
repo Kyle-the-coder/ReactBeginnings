@@ -17,7 +17,7 @@ function EmailModal() {
                 <Modal.Header closeButton>
                     <Modal.Title>Gmail</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Kylethacoder@gmail.com</Modal.Body>
+                <Modal.Body>kylethacoder@gmail.com</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close

@@ -2,8 +2,6 @@ import { CarouselItem } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
 import "../styles/displayProjects.css";
-import bg1Img from "../assets/background6.webp";
-import { useInView } from 'react-intersection-observer';
 import { useState } from 'react';
 import { InView } from "react-intersection-observer";
 
@@ -31,9 +29,9 @@ const DisplayProjects = (props) => {
     console.log("view is ", view3)
     return (
 
-        <section className="projectSection" id="projectSect" style={{ backgroundImage: `url(${bg1Img})` }} >
+        <section className="projectSection" id="projectSect" >
             <div className="projectSpacing">
-                <h3 className='projectsTitle mx-2' >Projects:</h3>
+                <h3 className='projectsTitle mx-2'><span className='textContent'>Pro</span>jects:</h3>
                 <div className='projectSquares'>
 
 
@@ -51,7 +49,7 @@ const DisplayProjects = (props) => {
 
 
                     {totalView ?
-                        <div className="projectContent1" >
+                        <div className="projectContentNoAnime1" >
 
                             <Carousel slide={false}>
                                 <CarouselItem>
@@ -64,11 +62,11 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/216849310-e4eb2915-7e70-4219-b935-233411111b67.mov"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Front-end written in React, JavaScript, CSS</p>
+                            <p>"Video Game Wikipedia" type of site, a front-end app written in React, JavaScript, CSS</p>
                             <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo" className='projectLinks'>GitHub Link</Link>
                         </div>
                         :
-                        <div className="projectContentNoAnime1" >
+                        <div className="projectContent1" >
 
                             <Carousel slide={false}>
                                 <CarouselItem>
@@ -81,7 +79,7 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/216849310-e4eb2915-7e70-4219-b935-233411111b67.mov"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Front-end written in React, JavaScript, CSS</p>
+                            <p>"Video Game Wikipedia" type of site, a front-end written in React, JavaScript, CSS</p>
                             <Link to="https://github.com/Kyle-the-coder/NextDimensionGameInfo" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
@@ -114,7 +112,7 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/212786213-81945b3b-1031-48f3-aa4e-1699428ee590.mp4"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Full Stack written in Java with SpringBoot and the dataBase is MySql</p>
+                            <p>Tournament hosting and posting social app, full Stack written in Java with SpringBoot and the dataBase is MySql</p>
                             <Link to="https://github.com/Kyle-the-coder/TourneyJourney" className='projectLinks'>GitHub Link</Link>
                         </div> :
                         <div className="projectContent2">
@@ -130,7 +128,7 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/212786213-81945b3b-1031-48f3-aa4e-1699428ee590.mp4"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Full Stack written in Java with SpringBoot and the dataBase is MySql</p>
+                            <p>Tournament hosting and posting social app, full Stack written in Java with SpringBoot and the dataBase is MySql</p>
                             <Link to="https://github.com/Kyle-the-coder/TourneyJourney" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
@@ -152,7 +150,7 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/210454742-dd97d1d5-f264-415d-b3d7-85d662659eb8.mov"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Full Stack written in Python with Flask and the dataBase is MySql</p>
+                            <p className='pjText'>An app created for dance battle events, full Stack written in Python with Flask and the dataBase is MySql, also used the Google Maps API</p>
                             <Link to="https://github.com/Kyle-the-coder/BattleEventInc" className='projectLinks'>GitHub Link</Link>
                         </div>
 
@@ -170,7 +168,7 @@ const DisplayProjects = (props) => {
                                     <video loop muted autoPlay controls='' className="projectVideo" src="https://user-images.githubusercontent.com/111798115/210454742-dd97d1d5-f264-415d-b3d7-85d662659eb8.mov"></video>
                                 </CarouselItem>
                             </Carousel>
-                            <p>Full Stack written in Python with Flask and the dataBase is MySql</p>
+                            <p>An app created for dance battle events, full Stack written in Python with Flask and the dataBase is MySql, also used the Google Maps API</p>
                             <Link to="https://github.com/Kyle-the-coder/BattleEventInc" className='projectLinks'>GitHub Link</Link>
                         </div>}
 
